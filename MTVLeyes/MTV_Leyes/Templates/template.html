@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVT Leyes APP</title>
+</head>
+<body>
+
+<div class="container">
+        {% for f in mtvleyes %}
+    
+            Mi familiar se llama {{f.nombre}} {{f.apellido}}.  Naciò el {{f.nacimiento}} .
+    
+            {% if f.europeo == True%}
+                <p style = "color: green"> Como es europeo, lo podemos contactar al mail {{f.email}} para pedirle la ciudadania.</p>
+            {% else %}
+                <p style = "color: red"> como NO es europeo, no es necesario contactarlo.</p>
+            {% endif %}
+        {% endfor %}
+</div>
+
+</body>
+</html>

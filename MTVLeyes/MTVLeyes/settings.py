@@ -55,7 +55,7 @@ ROOT_URLCONF = 'MTVLeyes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["C:/Users/matia/Documents/Personales/Cursos/Coderhouse/MVT_Leyes/MTVLeyes/plantillas"],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
